@@ -40,5 +40,5 @@ Se identificado plágio no desenvolvimento do jogo, seja de material publicado n
 
 # Grupo
 
-* Pedro Mariano 
+* Pedro Mariano Alves da Fonseca
 * Felipe Silva de Borba
