@@ -37,3 +37,8 @@ Código-fonte: A avaliação do código-fonte corresponde à 60% da nota desta a
 Apresentação: A avaliação da apresentação corresponde à 40% da nota desta atividade avaliativa e é atribuída individualmente a cada membro do grupo. As apresentações serão realizadas na sala F11, no dia 15/05/2023 a partir das 19:00. Cada grupo terá até 05 (cinco) minutos para apresentar seu jogo em funcionamento. Não é necessário slides ou explicação do código durante a apresentação. Após a apresentação, o professor realizará questionamentos a alguns integrantes do grupo, à sua escolha, sobre o código-fonte do jogo. É obrigatória a participação de todos os integrantes do grupo na apresentação do trabalho.
 
 Se identificado plágio no desenvolvimento do jogo, seja de material publicado na Internet, de projeto de colegas ou de ferramentas de geração automática (ex.: ChatGPT), será atribuída nota zero ao trabalho de todos os envolvidos. Se identificado que um dos integrantes do grupo não participou do desenvolvimento do trabalho, este receberá nota zero no trabalho.
+
+# Grupo
+
+* Pedro Mariano 
+* Felipe Silva de Borba
