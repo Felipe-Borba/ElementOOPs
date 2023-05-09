@@ -7,7 +7,7 @@ public class Criatura {
     private int pontosDeVida;
     private String ataqueElemental;
 
-    public Criatura(String nome, int ataque, int poder, int velocidade, int defesa, int pontosDeVida, String ataqueElemental) {
+    public Criatura() {
         this.nome = nome;
         this.ataque = ataque;
         this.poder = poder;
