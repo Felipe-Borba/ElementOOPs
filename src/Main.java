@@ -1,9 +1,10 @@
-import java.io.IOException;
+import criaturas.Criatura;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         Menu.novoJogo();
-
-        System.out.println("todo novo jogo");
+        Criatura jogador = Menu.selecionaCriatura();
+        Torneio torneio = new Torneio(jogador);
+        torneio.iniciaTorneio();
     }
 }
