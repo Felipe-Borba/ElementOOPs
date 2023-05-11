@@ -19,7 +19,7 @@ DANO = PDF x ATQ / DEF x FATOR
 
 onde o FATOR depende da matriz de cruzamento a seguir:
 
-
+![image](https://ava.sesisenai.org.br/pluginfile.php/625193/mod_assign/intro/Screenshot%20from%202023-04-06%2015-53-21.png)
 
 Ao escolher a ação, o efeito sobre o oponente deve ser imediato e o jogo deve sinalizar a ação por meio de uma mensagem na tela. A ação da criatura controlada pelo jogo deve ser escolhida de maneira aleatória entre realizar um ataque físico e realizar um ataque elemental. Ao final de cada ação, o jogo deve verificar se a criatura afetada foi derrotada, isto é, teve seus PONTOS DE VIDA reduzidos à menos que 01 (um). Caso uma das criaturas tenha sido derrotada após uma ação, a batalha deve ser encerrada com uma mensagem de sucesso, caso o jogador seja o vitorioso, ou de derrota, caso o jogador seja o derrotado. Se o jogador for derrotado numa batalha, o jogo encerra com uma mensagem. Se o jogador for vitorioso numa batalha, um menu deve ser apresentado com as opções de iniciar a próxima batalha ou sair do programa. Se o jogador vencer as três batalhas, o jogo encerra com uma mensagem de sucesso. A qualquer momento que o usuário selecionar uma opção para sair do programa, o programa deve exibir uma mensagem e solicitar a confirmação da ação. Caso o usuário confirme, o programa deve ser encerrado.
 
