@@ -14,10 +14,9 @@ public class Torneio {
         this.desafiante = desafiante;
 
         // cria todos os tipos de criatura e depois remove a que for igual ao do desafiante
+        // TODO add outros tipos de criatura
         List<Criatura> oponentes = List.of(new StoneDev(), new WaveNerd());
-        oponentes = oponentes.stream().filter(oponente -> {
-            return oponente.getClass() != desafiante.getClass();
-        }).collect(Collectors.toList());
+        oponentes = oponentes.stream().filter(oponente -> oponente.getClass() != desafiante.getClass()).collect(Collectors.toList());
 
         this.oponentes = oponentes;
     }
