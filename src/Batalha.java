@@ -83,12 +83,12 @@ public class Batalha {
 
             if (this.isVitoria()) {
                 System.out.println("Parabens você venceu a batalha!");
+                // TODO tem um bug relacionado a esse return
                 // TODO retornar aquele enum
                 return;
             } else {
                 this.proximoTurno();
             }
-
         }
         // TODO mover para a logica do torneio
         System.out.println("Voce foi derrotado!");
