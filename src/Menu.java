@@ -1,6 +1,4 @@
-import criaturas.Criatura;
-import criaturas.StoneDev;
-import criaturas.WaveNerd;
+import criaturas.*;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -71,8 +69,7 @@ public class Menu {
                         + "4 - BreezeHacker (ar)\n"
         );
 
-        // TODO: retornar instancia da criatura selecionada
-        int selected = Menu.readIntegerRange(2);
+        int selected = Menu.readIntegerRange(4);
         switch (selected) {
             case 0:
                 Menu.sair();
@@ -80,6 +77,10 @@ public class Menu {
                 return new StoneDev();
             case 2:
                 return new WaveNerd();
+            case 3:
+                return new BurnCoder();
+            case 4:
+                return new BreezeHacker();
             default:
                 throw new Error("Internal Error");
         }
