@@ -18,6 +18,6 @@ public class StoneDev extends Criatura {
 
     @Override
     public String getEspecie() {
-        return "Stone Dev";
+        return "StoneDev";
     }
 }
