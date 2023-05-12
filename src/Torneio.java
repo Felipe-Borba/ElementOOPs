@@ -1,6 +1,4 @@
-import criaturas.Criatura;
-import criaturas.StoneDev;
-import criaturas.WaveNerd;
+import criaturas.*;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -15,7 +13,7 @@ public class Torneio {
 
         // cria todos os tipos de criatura e depois remove a que for igual ao do desafiante
         // TODO add outros tipos de criatura
-        List<Criatura> oponentes = List.of(new StoneDev(), new WaveNerd());
+        List<Criatura> oponentes = List.of(new StoneDev(), new WaveNerd(), new BurnCoder(), new BreezeHacker());
         oponentes = oponentes.stream().filter(oponente -> oponente.getClass() != desafiante.getClass()).collect(Collectors.toList());
 
         this.oponentes = oponentes;
