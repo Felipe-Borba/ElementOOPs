@@ -18,5 +18,6 @@ public class WaveNerd extends Criatura {
 
     @Override
     public String getEspecie() {
-        return "WaveNerd";}
+        return "WaveNerd";
+    }
 }
