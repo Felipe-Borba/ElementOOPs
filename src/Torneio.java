@@ -12,7 +12,6 @@ public class Torneio {
         this.desafiante = desafiante;
 
         // cria todos os tipos de criatura e depois remove a que for igual ao do desafiante
-        // TODO add outros tipos de criatura
         List<Criatura> oponentes = List.of(new StoneDev(), new WaveNerd(), new BurnCoder(), new BreezeHacker());
         oponentes = oponentes.stream().filter(oponente -> oponente.getClass() != desafiante.getClass()).collect(Collectors.toList());
 
@@ -30,6 +29,7 @@ public class Torneio {
 
             Batalha batalha = new Batalha(this.desafiante, oponente);
             batalha.iniciaBatalha();
+            this.desafiante.resetaVida();
 
             // se chegou aqui venceu a batalha
         }

@@ -21,11 +21,11 @@ public class Batalha {
     }
 
     private boolean isDerrota() {
-        return this.jogador.getPontosDeVida() < 1;
+        return this.jogador.getVida() < 1;
     }
 
     private boolean isVitoria() {
-        return this.oponente.getPontosDeVida() < 1;
+        return this.oponente.getVida() < 1;
     }
 
     private void proximoTurno() {
@@ -46,9 +46,9 @@ public class Batalha {
             System.out.println("\n-----");
             System.out.println("Status da batalha: ");
             System.out.println("jogador: " + jogador.getEspecie());
-            System.out.println("vida: " + jogador.getPontosDeVida());
+            System.out.println("vida: " + jogador.getVida());
             System.out.println("oponente: " + oponente.getEspecie());
-            System.out.println("vida: " + oponente.getPontosDeVida());
+            System.out.println("vida: " + oponente.getVida());
             System.out.println("-----");
 
 

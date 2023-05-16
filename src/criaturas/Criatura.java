@@ -8,15 +8,18 @@ public abstract class Criatura {
     private final int ataque;
     private final int defesa;
     private final int velocidade;
-    private int pontosDeVida;
-    // TODO o que é PDF não deveria der PDR?
+    private final int pontosDeVida;
+    private int vida;
 
     public Criatura() {
         this.poder = Criatura.generateRandomNumber(10, 30);
         this.ataque = Criatura.generateRandomNumber(5, 15);
         this.defesa = Criatura.generateRandomNumber(5, 15);
         this.velocidade = Criatura.generateRandomNumber(1, 10);
-        this.pontosDeVida = Criatura.generateRandomNumber(200, 400);
+
+        int vida = Criatura.generateRandomNumber(200, 400);
+        this.pontosDeVida = vida;
+        this.vida = vida;
     }
 
     private static int generateRandomNumber(int from, int to) {
@@ -40,8 +43,12 @@ public abstract class Criatura {
         return velocidade;
     }
 
-    public int getPontosDeVida() {
-        return pontosDeVida;
+    public int getVida() {
+        return vida;
+    }
+
+    public void resetaVida() {
+        this.vida = this.pontosDeVida;
     }
 
     public abstract int getAtaqueElemetal(Criatura defensor);
@@ -53,6 +60,6 @@ public abstract class Criatura {
     }
 
     public void recebeDano(int dano) {
-        this.pontosDeVida -= dano;
+        this.vida -= dano;
     }
 }
