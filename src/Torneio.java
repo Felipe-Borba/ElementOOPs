@@ -28,10 +28,15 @@ public class Torneio {
             Criatura oponente = this.oponentes.remove(0);
 
             Batalha batalha = new Batalha(this.desafiante, oponente);
-            batalha.iniciaBatalha();
-            this.desafiante.resetaVida();
+            Batalha.Resultado resultado = batalha.iniciaBatalha();
+
+            if (resultado == Batalha.Resultado.DERROTA) {
+                // Menu sair finaliza a execução do projeto
+                Menu.sair();
+            }
 
             // se chegou aqui venceu a batalha
+            this.desafiante.resetaVida();
         }
         // se chegou aqui venceu o torneio
         System.out.println("Parabens você venceu o torneio!");

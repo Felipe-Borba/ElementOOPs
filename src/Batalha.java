@@ -4,6 +4,9 @@ public class Batalha {
     private enum Turno {
         JOGADOR, OPONENTE
     }
+    public enum Resultado {
+        VITORIA, DERROTA
+    }
 
     private final Criatura jogador;
     private final Criatura oponente;
@@ -40,7 +43,7 @@ public class Batalha {
         return this.turno == Turno.JOGADOR;
     }
 
-    public void iniciaBatalha() {
+    public Resultado iniciaBatalha() {
         while (!this.isDerrota()) {
             //TODO move sout to menu
             System.out.println("\n-----");
@@ -83,15 +86,13 @@ public class Batalha {
 
             if (this.isVitoria()) {
                 System.out.println("Parabens você venceu a batalha!");
-                // TODO tem um bug relacionado a esse return
-                // TODO retornar aquele enum
-                return;
+                return Resultado.VITORIA;
             } else {
                 this.proximoTurno();
             }
         }
-        // TODO mover para a logica do torneio
+        // TODO mover para o menu logica do torneio
         System.out.println("Voce foi derrotado!");
-        Menu.sair();
+        return Resultado.DERROTA;
     }
 }
